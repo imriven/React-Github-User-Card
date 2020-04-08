@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Usercard from "./component/usercard";
 import Followerscard from "./component/followerCards";
-import getConfig from "../src/github";
+
 import Form from "./component/form";
 import Styled from "styled-components";
 import Video from "./media/video.mp4";
