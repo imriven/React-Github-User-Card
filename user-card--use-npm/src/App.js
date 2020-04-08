@@ -73,8 +73,8 @@ class App extends React.Component {
   getUserFromAxios = () => {
     axios
       .get(
-        `https://api.github.com/users/${this.state.userToSearch}`,
-        getConfig()
+        `https://api.github.com/users/${this.state.userToSearch}`
+        
       )
       .then((response) => {
         // deal with the response data in here
@@ -83,8 +83,7 @@ class App extends React.Component {
           userObject: response.data,
         });
         return axios.get(
-          `https://api.github.com/users/${this.state.userToSearch}/followers`,
-          getConfig()
+          `https://api.github.com/users/${this.state.userToSearch}/followers`
         );
       })
       .then((response) => {
